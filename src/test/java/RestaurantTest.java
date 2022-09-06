@@ -21,7 +21,14 @@ class RestaurantTest {
     }
     //REFACTOR ALL THE REPEATED LINES OF CODE
     //TDD Part 3
-
+    @Test
+    public void selecting_Items_should_return_order_value(){
+        restaurantTestMock();
+        int orderValue;
+        List<String> itemNames = Arrays.asList("Vegetable lasagne", "Sweet corn soup");
+        orderValue = restaurant.returnOrderValue(itemNames);
+        assertEquals(388,orderValue);
+    }
     //>>>>>>>>>>>>>>>>>>>>>>>>>OPEN/CLOSED<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     //-------FOR THE 2 TESTS BELOW, YOU MAY USE THE CONCEPT OF MOCKING, IF YOU RUN INTO ANY TROUBLE
     @Test

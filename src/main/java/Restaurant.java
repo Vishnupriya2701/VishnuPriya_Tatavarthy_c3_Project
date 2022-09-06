@@ -70,4 +70,8 @@ public class Restaurant {
         return name;
     }
 
+    public int returnOrderValue(List<String> itemNames) {
+        int orderCost = 0;
+        return orderCost;
+    }
 }
